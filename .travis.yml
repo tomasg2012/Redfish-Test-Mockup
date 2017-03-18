@@ -12,5 +12,5 @@ branches:
     - master
 
 script:
-    - test_exit.py
+    - python test_exit.py
      
