@@ -8,6 +8,7 @@ python:
     - "2.7"
 
 install:
+    - ls
     - pip install -r requirements.txt
     - git clone https://github.com/DMTF/Redfish-Mockup-Server.git
     - git clone https://github.com/DMTF/Redfish-Service-Validator.git
@@ -20,5 +21,7 @@ branches:
     - master
 
 script:
+    - python3 Redfish-Mockup-Server/redfishMockupServer.py & sleep 10
+    - python Redfish-Service-Validator/RedfishServiceValidator.py
     - python3 test_exit.py
     - ls
