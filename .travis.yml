@@ -11,7 +11,7 @@ install:
     - ls
     - pip install -r requirements.txt
     - git clone https://github.com/DMTF/Redfish-Mockup-Server.git
-    - git clone https://github.com/DMTF/Redfish-Service-Validator.git
+    - git clone -b devel https://github.com/DMTF/Redfish-Service-Validator.git
     - mkdir logs
     - wget http://www.dmtf.org/sites/default/files/standards/documents/DSP8010_2016.3.zip
     - unzip -j "DSP8010_2016.3.zip" "DSP8010_2016.3/metadata/*" -d "./metadata"
